@@ -116,7 +116,6 @@ class ProductController extends Controller
                 $item->price = $input['price'];
                 $item->save();
                 $msg = [
-                    'id' => $id,
                     'status' => true,
                     'message' => 'Cập nhật thành công',
                     'data' => new ProductResource($item)
